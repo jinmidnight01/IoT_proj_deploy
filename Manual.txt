@@ -1,0 +1,4 @@
+1. README.md의 안내 총 3가지(환경 세팅, 웹 구동, Modi 초음파 센서 구동)를 잘 따라하면 서비스가 잘 실행될 것입니다!
+2. 이외의 코드들(연습용)은 Github 링크 https://github.com/Jinnmidnnight/IoT_proj 의 practice 폴더에 업로드해놨습니다!
+
+감사합니다:)
