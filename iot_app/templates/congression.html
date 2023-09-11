@@ -277,8 +277,8 @@
                 $('select[name=selYear] option[value='+year+']').attr("selected",true);
                 $('select[name=selMonth] option[value='+month+']').attr("selected",true);
                 $('select[name=selDay] option[value='+date+']').attr("selected",true);
-                document.getElementById("dailyGraph").src = "/static/"+year+month+date+".png";
-
+                // document.getElementById("dailyGraph").src = "/static/"+year+month+date+".png";
+                document.getElementById("dailyGraph").src = "/static/example.png";
             }
             function search() {
                 const year = $("select[name=selYear]").val();

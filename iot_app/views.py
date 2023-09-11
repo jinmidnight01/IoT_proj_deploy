@@ -107,7 +107,6 @@ def congression(request):
         else:
             day = str(datetime.datetime.now().day)
         # plt.title(str(datetime.datetime.now().year)+'/'+str(datetime.datetime.now().month)+'/'+day, fontsize=90, fontname="Inter", fontweight="bold")
-        plt.title("Example Graph", fontsize=90, fontname="Inter", fontweight="bold")
 
         ax.legend(fontsize=44)
         # plt.show()
