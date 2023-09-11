@@ -103,15 +103,17 @@ def congression(request):
         plt.yticks(y, fontsize=40)
         # ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
         if datetime.datetime.now().day < 10:
-            day = "0"+str(datetime.datetime.now().day+1)
+            day = "0"+str(datetime.datetime.now().day)
         else:
-            day = str(datetime.datetime.now().day+1)
-        plt.title(str(datetime.datetime.now().year)+'/'+str(datetime.datetime.now().month)+'/'+day, fontsize=90, fontname="Inter", fontweight="bold")
+            day = str(datetime.datetime.now().day)
+        # plt.title(str(datetime.datetime.now().year)+'/'+str(datetime.datetime.now().month)+'/'+day, fontsize=90, fontname="Inter", fontweight="bold")
+        plt.title("Example Graph", fontsize=90, fontname="Inter", fontweight="bold")
 
         ax.legend(fontsize=44)
         # plt.show()
         plt.rcParams["figure.figsize"] = [16,20]
-        plt.savefig('static/'+str(datetime.datetime.now().year)+str(datetime.datetime.now().month)+str(datetime.datetime.now().day+1)+'.png')
+        # plt.savefig('static/'+str(datetime.datetime.now().year)+str(datetime.datetime.now().month)+str(datetime.datetime.now().day)+'.png')
+        plt.savefig('static/example.png')
 
     # 객체 생성
     iot_first = Congression.objects.all().order_by('-created_at').first()
