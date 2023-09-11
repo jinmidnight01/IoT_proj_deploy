@@ -76,8 +76,8 @@ def congression(request):
     x = []
     y = []
     
-    if os.path.isfile("../result.csv"):
-        with open(r"../result.csv",'r') as csvfile:
+    if os.path.isfile("./result.csv"):
+        with open(r"./result.csv",'r') as csvfile:
             plots = csv.reader(csvfile, delimiter = ',')
             sum = 0
             for row in plots:
